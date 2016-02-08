@@ -1,0 +1,8 @@
+{
+  "name": "first_anton",
+  "dependencies": {
+    "jquery": "^1.8.3",
+    "normalize-css": "normalize.css#^3.0.3",
+    "modernizer": "^2.8.2"
+  }
+}
