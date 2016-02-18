@@ -1,0 +1,104 @@
+.myworks-list {
+	margin: 0 auto 0 -25px;
+	padding: 27px 21px 27px 21px;
+}
+
+.workitem {
+	display: inline-block;
+	list-style: none;
+	margin-bottom: 42px;
+	margin-left: 25px;
+	vertical-align: top;
+	width: 183px;
+}
+
+.work-previewblock-addnew {
+	background-color: #edf8fc;
+	border-radius: 5px;
+	border: 2px dashed #71bed0;
+	height: 127px;
+	width: 179px;
+}
+
+.addproject-link {
+	color: #5bb3c8;
+	display: block;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	padding: 35px 35px 28px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.addproject-image {padding-bottom: 14px;}
+
+.work-previewblock {margin-bottom: 8px;}
+
+.workimage {
+	border-radius: 5px;
+	border: 2px solid #71bed0;
+	height: 127px;
+	width: 179px;
+}
+
+.workimage-addnew {border: none;}
+
+.worklink-wrap {text-align: center;}
+
+.worklink {
+	color: #3ba8c0;
+	display: block;
+	font-family: 'fira_sanslight_italic';
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.work-info {
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	margin: 0;
+	padding: 2px 5px 0px 5px;
+	text-align: center;
+}
+
+/*HIDDEN LINK*/
+
+.hover-img {
+	height: 131px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.hiddenlink {
+	border-radius: 5px;
+	border: 3px solid #fff;
+	color: #fff;
+	font-size: 12px;
+	left: 59px;
+	padding: 2px 4px;
+	position: absolute;
+	text-decoration: none;
+	top: 57px;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.hover-img:hover .hiddenlink {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.hover-img:hover .workimage {
+	-moz-opacity: 0.20;
+	opacity:.20;
+	filter: alpha(opacity=20);
+}
+
+.hover-img:hover {
+	background-color: #3888b2;
+	border-radius: 5px;
+}
+

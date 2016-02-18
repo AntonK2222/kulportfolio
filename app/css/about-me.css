@@ -1,0 +1,88 @@
+
+.content_text_name{
+    padding:20px 20px 0px 130px;
+	vertical-align:middle;
+	font-family:'fira_sansbook';
+	font-size:17px;
+	}
+.content_text_value{
+    padding:0px 20px 20px 130px;
+	vertical-align:middle;
+	font-family:'fira_sanslight';
+	font-size:15px;
+	}
+.content_job_item{
+	background:url("../img/bag.png") no-repeat  65px center; 
+	}
+.education_item_1, .education_item_2{
+	background:url("../img/cap.png") no-repeat 65px center;
+}
+
+.education_item_3{
+	background:url("../img/page.png") no-repeat  73px center;
+}	
+
+/*avatar*/
+
+.avatar-wrap{
+    float: left;
+    padding-left: 55px;
+	padding-top: 36px;
+	
+}
+.avatar-box{
+    float: left;
+   border-radius: 50% 50%;
+    border: 5px solid #36a7be;
+    height: 140px;
+    overflow: hidden;
+    width: 140px;
+    
+    }
+
+
+/*основная информация*/
+.info-list-wrap {
+	float: right;
+	width: 443px;
+    
+}
+
+.info-list {list-style: none;}
+.info-item {margin-bottom: 13px;}
+
+.info-value1 {
+	float: left;
+	font-size: 17px;
+ 	font-family: 'fira_sansmedium';
+}
+
+.info-value2 {
+	float: left;
+	font-size: 15px;
+	margin-left: 20px;
+    padding-top: 2px;
+	max-width: 210px;
+	font-family: 'fira_sansbook';
+}
+
+.skills-list {padding: 5px 0 6px 0;}
+
+.skills-item {
+	display: inline-block;
+	background-color: #36a7be;
+	background-image: -moz-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'ProximaNovaCond-Semibold';
+	font-size: 14px;
+	margin-bottom: 9px;
+	margin-right: 5px;
+	padding: 1px 14px;
+}
+
+
+
+
