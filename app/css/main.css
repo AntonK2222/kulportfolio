@@ -1,4 +1,8 @@
 
+
+* {box-sizing: border-box;}
+
+
 html{
     height: 100%
 	}
@@ -277,3 +281,36 @@ header{
 }
 
 .clearfix:after {clear: both;}
+
+
+.lock {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 0px;
+
+}
+
+.lock .lock-inner {
+	padding-left: 25px;
+	display: block;
+	height: 40px;
+	font-size: 16px;
+	line-height: 2.2;
+	color: #4a545d;
+	text-decoration: none;
+	background: url("../img/spritesheet.png") no-repeat;
+    width: 20px;
+    height: 32px;
+    background-position: -160px -5px;
+    position: absolute;
+    margin: 21px 0 0 31px;
+}
+.lock .lock-inner:hover,
+.lock .lock-inner:active,
+.lock .lock-inner:focus {
+	text-decoration: underline;
+	 background: url("../img/spritesheet.png") no-repeat;
+    width: 20px;
+    height: 32px;
+    background-position: -5px -119px;
+}

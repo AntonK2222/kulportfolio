@@ -18,6 +18,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/form.css">
     <!--modernizer-->
     <script src="bower/modernizer/modernizr.js"></script>
   </head>
@@ -29,12 +30,12 @@
   <div class="wrapper">
     <div class="header"> 
       <header>
-        <a class="logo" href="#"><img src="img/logo.jpg" alt="logotip"></a>
+        <a class="logo" href="#"><img src="img/logo.png" alt="logotip"></a>
         <div class="links">
            <a href="https://github.com" alt="Github"><div class="gh social" ></div></a>
            <a href="https://Facebook.com"><div class="fc social" alt="Facebook"></div></a>
            <a href="https://twitter.com"><div class="tw social" alt="twitter"></div></a>
-           <a href="https://http://vk.com/id4807161"><div class="vk social" alt="vkontakte"></div></a>
+           <a href="http://vk.com/id4807161"><div class="vk social" alt="vkontakte"></div></a>
         </div>
       </header>
     </div>
@@ -64,38 +65,52 @@
 						<span class="content_contact_value">У вас интересный проект? Напишите мне</span>
 				    </div>
 				     <div class="content-body">
-				        <form action="#" method="post" id="contact-form" class="contact-form">
-				            <div class="inputblock clearfix">
-								<label for="input-name-contactme" class="input-label inputblock-name">
-								    <span class="header-label">Имя</span>
-										<input type="text" name="name" id="input-name-contactme" class="input-text" placeholder="Как к Вам обращаться" data-tooltip="name">
-										<div class="tooltip-wrap tooltip-name-contactme" data-tooltip="name">
-											<div class="tooltip">Вы не ввели имя</div><div class="tooltip-triangle-right"></div>
-										</div>
-								</label>
-								<label for="input-email-contactme" class="input-label inputblock-email">
-								    <span class="header-label">Email</span>
-										<input type="text" name="email" id="input-email-contactme" class="input-text" placeholder="Куда мне писать" data-tooltip="email">
-										
-								  </label>
-				              </div>
-								<label for="input-message-contactme" class="input-label">
-									<span class="header-label">Сообщение</span>
-									<textarea name="message" id="input-message-contactme" placeholder="Кратко в чем суть" class="textarea-message" data-tooltip="message"></textarea>
-								</label>
-								<label for="input-captcha-contactme" class="input-label captchablock">
-									<span class="header-label captcha-header">Введите код, указанный на картинке</span>
-									<div class="captcha-body clearfix">
-										<img src="img/fakecaptcha.png" class="fakecaptcha" alt="captcha">
-										<input type="text" name="captcha" id="input-captcha-contactme" class="input-text input-text-captcha" placeholder="Введите код" data-tooltip="captcha">
-										
-									</div>
-								</label>								
-								<div class="btn-block clearfix">
-									<button type="submit" value="Отправить" name="submitbut" class="btn btn-submit">Отправить</button>
-									<button type="reset" value="Очистить" class="btn btn-clear">Очистить</button>
-								</div>
-							</form>
+				       <form class="contact_form form" method="post" action="php/form_contacts.php">
+
+						<div class="sever_mess">
+							<div class="server_mess_title">response_server</div>
+							<div class="server_mess_desc">text_server</div>
+						</div>
+
+						<div class="row_top clearfix">
+							<div class="form__item leadname">
+								<label class="label_text" for="leadname">Имя</label>
+								<input id="leadname" class="input_text" name="leadname"  type="text" placeholder="Как к вам обращаться">
+								<span class="tooltipstext posleft"></span>
+							</div>
+
+							<div class="form__item leademail">
+								<label class="label_text" for="leademail">Email</label>
+								<input id="leademail" class="input_text" name="leademail" type="text" placeholder="Куда мне писать">
+								<span class="tooltipstext posright"></span>
+							</div>
+						</div>
+
+						<div class="form__item leadmessage">
+							<label class="label_text" for="leadmessage">Сообщение</label>
+							<textarea id="leadmessage" class="textarea_text" name="leadmessage" placeholder="Кратко в чем суть"></textarea>
+							<span class="tooltipstext posleft"></span>
+						</div>
+
+						<div class="form__item">
+							<span class="clearfix">
+								<label class="label_text clearfix"  for="leadcapture">Проверочный код</label>
+								<span class="capture_img">
+									<img src="php/captcha.php" alt="capturecode" />
+								</span>
+
+								<span class="capture_code">
+									<input id="leadcapture" class="input_text" name="leadcapture" type="text" placeholder="Введите код">
+									<span class="tooltipstext posright"></span>
+								</span>
+							</span>
+						</div>
+
+						<div class="buttons clearfix">
+							<button class="button button_send" type="submit" value="submit">Отправить</button>
+							<button class="button button_clear" type="reset" value="clear">Очистить</button>
+						</div>
+					</form>
 						</div>	
 					</section>
 				</div>
@@ -114,6 +129,8 @@
         </footer>
    </div>
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.12.0.min.js"><\/script>');</script>
 	<script src="bower/jquery/jquery.js"></script>
 	<script src="js/main.js"></script>
 	

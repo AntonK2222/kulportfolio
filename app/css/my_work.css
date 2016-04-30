@@ -101,4 +101,20 @@
 	background-color: #3888b2;
 	border-radius: 5px;
 }
+.addproject {
+	position: absolute;
+	padding-top: 80px;
+	left:0;
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	font: normal 13px 'fira_sanslight';
+	color: #3ba8c0;
+    text-decoration: none;
+}
+
+.project.newproject:hover {
+	background-color: #FFF;
+}
+
 

@@ -18,6 +18,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/my_work.css">
+    <link rel="stylesheet" href="css/form.css">
     <!--modernizer-->
     <script src="bower/modernizer/modernizr.js"></script>
   </head>
@@ -29,12 +30,12 @@
   <div class="wrapper">
     <div class="header"> 
       <header>
-        <a class="logo" href="#"><img src="img/logo.jpg" alt="logotip"></a>
+        <a class="logo" href="#"><img src="img/logo.png" alt="logotip"></a>
         <div class="links">
            <a href="https://github.com" alt="Github"><div class="gh social" ></div></a>
            <a href="https://Facebook.com"><div class="fc social" alt="Facebook"></div></a>
            <a href="https://twitter.com"><div class="tw social" alt="twitter"></div></a>
-           <a href="https://http://vk.com/id4807161"><div class="vk social" alt="vkontakte"></div></a>
+           <a href="http://vk.com/id4807161"><div class="vk social" alt="vkontakte"></div></a>
         </div>
       </header>
     </div>
@@ -132,7 +133,58 @@
     </main>
      
     </div>
-   
+    
+	<div class="popup__overlay">
+		<div class="popup">
+			<form id="popup_form" class="form" method="post" action="php/form_add_project.php" enctype="multipart/form-data">
+				<div class="popup_header clearfix">
+					<div class="text">Добавление проекта</div>
+					<div class="close">
+						<div class="close_img" id="icon_popup_close">Закрыть</div>
+					</div>
+				</div>
+				<div class="popup_body">
+					<div class="sever_mess">
+						<div class="server_mess_title">response_server</div>
+						<div class="server_mess_desc">text_server</div>
+					</div>
+
+					<div class="form__item">
+						<label class="label_text" for="project_name">Название проекта</label>
+						<input id="project_name" class="input_text"  type="text" name="project_name" placeholder="Введите название">
+						<span class="tooltipstext posleft"></span>
+					</div>
+
+					<div class="form__item">
+						<label class="label_text" for="unload_file">Картинка проекта</label>
+						<label class="label_unload_file" for="unload_file">
+							<span class="unload_paht_file">Загрузите изображение</span>
+							<span class="label_unload_file_img">icon-unload_file</span>
+							<input id="unload_file" class="unload_file" multiple="multiple" name="project_file" type="file" >
+						</label>
+						<span class="tooltipstext posleft"></span>
+					</div>
+
+					<div class="form__item">
+						<label class="label_text" for="project_url">URL проекта</label>
+						<input id="project_url" class="input_text" type="text" name="project_url" placeholder="Добавьте ссылку">
+						<span class="tooltipstext posleft"></span>
+					</div>
+
+					<div class="form__item">
+						<label class="label_text" for="project_desc">Описание</label>
+						<textarea id="project_desc" class="textarea_text" name="project_desc" placeholder="Пару слов о вашем проекте"></textarea>
+						<span class="tooltipstext posleft"></span>
+					</div>
+
+					<div class="project newproject" id="link_popup_show">
+							<i class="icon sprite-addproject">Иконка: добавление проекта</i>
+							<div class="addproject">Добавить </div>
+						</div>
+				</div>
+			</form>
+		</div>
+	</div>
    <div class="footer_container">
         <footer class="footer">
 		<a href="#" alt="login"><div class="login" ></div></a>
@@ -140,9 +192,9 @@
         </footer>
    </div>
 	
-	<script src="bower/jquery/jquery.js"></script>
-	<script src="js/main.js"></script>
+		
 	
+	<script src="js/add_project.js"></script>
   </body>
 
 </html>
